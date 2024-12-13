@@ -1,0 +1,190 @@
+*{
+    margin:0 ;
+    padding:0 ;
+    box-sizing: border-box ;
+}
+
+.wrapper{
+    min-height:100vh ;
+    width:100vw ;
+    background-color: #212121;
+    background: linear-gradient(45deg,#06837ba1,#3d610dbe);
+    display:flex ;
+    flex-direction:column ;
+    justify-content: center; 
+    align-items:center ;
+    overflow-x:hidden ;
+}
+
+.wrapper h1{
+    color: rgb(255, 0, 85) ;
+    font-size:3em ;
+    font-weight:bold ;
+    text-shadow: 5px 6px 5px rgba(0, 0, 0, 0.418);
+    margin-top:-50px ;
+    margin-bottom:50px ;
+}
+
+.wrapper h1 span{
+    color:white ;
+    font-weight: bolder;
+    font-size: 3.3rem ;
+}
+
+.inputBox{
+    height:300px ;
+    width:650px ;
+    background-color:rgba(0, 29, 98, 0.764);
+    background: radial-gradient(circle,rgba(0, 29, 98, 0.734),rgba(2,32,64,1));
+    outline:none ;
+    border:none ;
+    border-radius: 25px ;
+    padding: 2rem ;
+    margin-bottom:30px ;
+    color:aliceblue ;
+    font-size:15px ;
+    resize:none ;
+}
+
+textarea::placeholder{
+    font-size:16px ;
+    color:#ddd ;
+    font-weight:400 ;
+}
+
+textarea::-webkit-scrollbar{
+    display:none ;
+}
+
+.box{
+    width:650px ;
+    display:flex ;
+    align-items:center ;
+    gap:20px ;
+}
+
+.btn{
+    display:flex ;
+    justify-content: center; 
+    align-items:center ;
+    background: #ff2963 ;
+    color:#fff ;
+    font-size:16px ;
+    padding:10px 20px ;
+    border-radius:35px ;
+    border:0 ;
+    outline:0 ;
+    cursor:pointer ;
+}
+
+.btn img{
+    height:15px ;
+    width:15px ;
+    margin-right:10px ;
+}
+
+.btn span{
+    font-weight: 700;
+}
+
+select{
+    flex:1 ;
+    color:#fff ;
+    background: #21212167;
+    height:50px ;
+    padding:0 20px ;
+    outline:0 ;
+    border:none ;
+    border-radius: 35px ;
+    appearance: none ;
+    background-image: url(./images/dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 20px);
+    background-position-y: calc(20px);
+}
+
+@media(width<662px){
+    .inputBox{
+        height:300px ;
+        width:550px ;
+    }
+    .box{
+        width:500px ;
+    }
+
+    select{
+        max-width:400px ;
+        background-size: 14px;
+    }
+}
+
+@media(width<573px){
+    .wrapper h1{
+        font-size: 2.3em;
+    }
+    .wrapper h1 span{
+        font-size: 2.5rem ;
+    }
+    .inputBox{
+        height:300px ;
+        width:450px ;
+    }
+    .box{
+        width:450px ;
+    }
+
+    select{
+        max-width:300px ;
+        background-size: 14px;
+    }
+}
+
+@media(width<452px){
+    .wrapper h1{
+        font-size: 1.8em;
+    }
+    .wrapper h1 span{
+        font-size: 2rem ;
+    }
+    .inputBox{
+        height:300px ;
+        width:350px ;
+    }
+    .box{
+        width:350px ;
+    }
+    select{
+        max-width:200px ;
+        height:42px ;
+        padding:0 9px ;
+        background-size: 11px;
+        background-position-x: calc(100% - 90px);
+        background-position-y: calc(30px);
+    }
+}
+
+@media(width<374px){
+    .wrapper h1{
+        font-size: 1.3em;
+    }
+    .wrapper h1 span{
+        font-size:1.4rem ;
+    }
+    .inputBox{
+        height:350px ;
+        width:250px ;
+    }
+    .box{
+        width:250px ;
+    }
+    select{
+        max-width:120px ;
+        height:42px ;
+        padding:0 9px ;
+        background-size: 12px;
+        background-position-x: calc(100% - 50px);
+        background-position-y: calc(30px);
+    }
+}
+
