@@ -34,7 +34,6 @@ button.addEventListener('click', (e) => {
             window.speechSynthesis.resume() ;
             play.src = "./images/pause-solid.png";
         }else{
-            isPaused=true ;
             play.src = "./images/pause-solid.png";
             speech.text = textarea.value;
             window.speechSynthesis.speak(speech);
