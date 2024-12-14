@@ -30,18 +30,19 @@ button.addEventListener('click', (e) => {
 
     if (playSrc == "play.png") {
         if(isPaused){
-            isPaused=false ;
             window.speechSynthesis.resume() ;
             play.src = "./images/pause-solid.png";
+            isPaused=false ;
         }else{
-            play.src = "./images/pause-solid.png";
             speech.text = textarea.value;
+            play.src = "./images/pause-solid.png";
             window.speechSynthesis.speak(speech);
         }
-    } else if(playSrc == "pause-solid.png") {
-        isPaused=true ;
+    }
+    else if(playSrc == "pause-solid.png") {
         window.speechSynthesis.pause();
         play.src = "./images/play.png";
+        isPaused=true ;
     }
 
     speech.onend = () => {
